@@ -15,7 +15,8 @@
         android:ems="10"
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"/>
 
     <TextView
         android:id="@+id/amountTextView"
@@ -27,7 +28,8 @@
         android:ems="10"
         android:hint="@string/enter_amount"
         app:layout_constraintEnd_toEndOf="@+id/barrier2"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"/>
 
     <SeekBar
         android:id="@+id/percentSeekBar"
@@ -46,9 +48,11 @@
         android:layout_height="34dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="112dp"
+        android:text="@string/percent"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"/>
 
     <TextView
         android:id="@+id/tipLabelTextView"
@@ -59,7 +63,8 @@
         android:ems="10"
         android:text="@string/tip"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"/>
 
     <TextView
         android:id="@+id/tipTextView"
@@ -69,9 +74,9 @@
         android:layout_marginTop="172dp"
         android:background="@color/colorPrimary"
         android:ems="10"
-        android:text="0.00"
         app:layout_constraintStart_toEndOf="@+id/tipLabelTextView"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"/>
 
     <TextView
         android:id="@+id/totalLabelTextView"
@@ -81,7 +86,8 @@
         android:layout_marginTop="232dp"
         android:text="@string/total"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"/>
 
     <TextView
         android:id="@+id/totalTextView"
@@ -90,9 +96,9 @@
         android:layout_marginStart="60dp"
         android:layout_marginTop="232dp"
         android:background="@color/colorPrimary"
-        android:text="0.00"
         app:layout_constraintStart_toEndOf="@+id/totalLabelTextView"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"/>
 
     <android.support.constraint.Barrier
         android:id="@+id/barrier"
